@@ -1,0 +1,156 @@
+/* Estilo da navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999; 
+}
+
+/* Estilo dos itens da navbar */
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    font-family: 'Cinzel Decorative', serif;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Estilo dos itens da navbar ao passar o mouse */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: #ffcc00 !important;
+}
+
+/* Estilo da fonte */
+.escola-fonte {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+}
+
+/* Estilo da imagem de fundo */
+.background-image2 {
+    background-image: url('./img/harry_potter.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    filter: blur(1.5px);
+}
+
+
+.card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-family: 'Harry P', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+select.browser-default {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000000" width="18px" height="18px"><path d="M7 10l5 5 5-5H7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 18px auto;
+}
+
+btn-block {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+btn-block:hover {
+    background-color: #ffcc00;
+}
+
+.background-image2 {
+    background-image: url('./img/CARTAS.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    position: relative; 
+    filter: blur(0.5px); 
+}
+
+body {
+    background-image: url('./img/CARTAS.jpg');
+    font-family: 'Cinzel Decorative', serif; 
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.card {
+    margin-top: 40%;
+    background-color: #c7c7ad53;
+    border: none;
+}
+
+.btn.btn-primary {
+    /* Estilos personalizados aqui */
+    background-color: #ffcc00; /* Cor de fundo */
+    color: #000; /* Cor do texto */
+    border: none; /* Remover borda */
+    border-radius: 10px; /* Arredondar as bordas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+.btn.btn-primary:hover {
+    background-color: #ffa500; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', serif; /* Mesma fonte da página */
+    font-weight: 900; /* Torna a fonte ainda mais grossa */
+    color: #fff; /* Cor branca */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 30%; /* Posiciona o topo do elemento no meio da página */
+    left: 50%; /* Posiciona a esquerda do elemento no meio da página */
+    transform: translate(-50%, -50%); /* Centraliza o elemento no meio da página */
+    text-align: center; /* Centraliza horizontalmente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Adiciona uma sombra ao texto */
+}

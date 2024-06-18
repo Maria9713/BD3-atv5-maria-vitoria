@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./STYLES2.CSS">
+    <title>Lista de Alunos</title>
+</head>
+<body>
+<div class="content">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo_escola.png" alt="Logo" height="50">
+                <span class="escola-fonte">Escola de Magia e Bruxaria de Hogwarts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="/INDEX.HTML">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="/cadastro.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-menu" href="#">Lista de Alunos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <h1 class="mt-5">Lista de Alunos</h1>
+</div>
+
+<div class="container mt-3"> <!-- Ajuste a margem superior conforme necessário -->
+    <div class="row justify-content-center">
+        <!-- Conteúdo do seu segundo container -->
+        <div class="col-md-8">
+            <ul id="aluno-list" class="list-group"></ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- IMPORT DO SDK DO FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+<script>
+    // DADOS DE CREDENCIAIS DE ACESSO AO FIREBASE
+    const firebaseConfig = {
+        apiKey: "AIzaSyC2cS3jRrcahzHF50lIkDEkd-MuOKxCWL0",
+        authDomain: "bd3-nosql-atv5-45c84.firebaseapp.com",
+        projectId: "bd3-nosql-atv5-45c84",
+        storageBucket: "bd3-nosql-atv5-45c84.appspot.com",
+        messagingSenderId: "280337249242",
+        appId: "1:280337249242:web:ff6ceca5168316a0ea46e3",
+        measurementId: "G-JNKV0HN7EL"
+    };
+
+    // INICIA O FIREBASE NA APLICAÇÃO WEB 
+    firebase.initializeApp(firebaseConfig);
+
+    // INICIO CONEXÃO COM O BANCO NOSQL FIRESTORE
+    const db = firebase.firestore();
+
+    // TESTE DA CONEXÃO COM O FIRESTORE 
+    console.log('TESTE DE CONEXÃO COM O FIRESTORE');
+    console.log(db);
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    overflow: hidden; /* Oculta a barra de rolagem */
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3) !important; /* Cor de fundo com transparência */
+    position: absolute; /* Define o posicionamento absoluto para sobrepor outros elementos */
+    top: 0; /* Posiciona a navbar no topo da página */
+    width: 100%; /* Define a largura da navbar como 100% da largura da página */
+}
+
+/* Ajuste da opacidade */
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    font-family: 'Cinzel Decorative', serif;
+    color: rgba(255, 255, 255, 0.8) !important; /* Cor dos itens da navbar com opacidade */
+}
+
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: #ffcc00 !important; /* Cor de destaque ao passar o mouse */
+}
+.escola-fonte {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+
+h1 {
+    font-family: 'Cinzel Decorative', serif; /* Mesma fonte da página */
+    font-weight: 900; /* Torna a fonte ainda mais grossa */
+    color: #fff; /* Cor branca */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 50%; /* Posiciona o topo do elemento no meio da página */
+    left: 50%; /* Posiciona a esquerda do elemento no meio da página */
+    transform: translate(-50%, -50%); /* Centraliza o elemento no meio da página */
+    text-align: center; /* Centraliza horizontalmente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Adiciona uma sombra ao texto */
+}
+
+/* Estilo para o botão */
+/* Estilo para o botão */
+.btn {
+    position: absolute; /* Define o posicionamento absoluto */
+    background-color: #ffcc00; /* Define a cor de fundo padrão */
+    color: #000; /* Define a cor do texto igual à cor de fundo padrão */
+    z-index: 1; /* Garante que o botão esteja acima de outros elementos */
+    border-radius: 20px; /* Define o arredondamento das bordas */
+    width: 200px; /* Define a largura do botão */
+    height: 50px; /* Define a altura do botão */
+    font-family: 'Cinzel Decorative', serif; /* Define a fonte */
+    font-weight: 800; /* Define o peso da fonte */
+}
+
+/* Estilo para o botão de aviso (warning) */
+.btn-warning {
+    top: 75%; /* Define a distância do topo da página */
+    left: 40%; /* Define a distância da esquerda da página */
+}
+
+/* Estilo para o botão no hover */
+.btn:hover {
+    color: #fff; /* Define a cor do texto para o hover */
+}
+
+
+
+.background-image {
+    background-image: url('./img/escola02.jpg'); /* Caminho da sua imagem */
+    background-size: cover; /* Cobrir todo o espaço da div */
+    background-position: center; /* Posição central da imagem */
+    height: 100vh; /* Altura total da janela de visualização */
+    position: relative; /* Define o posicionamento relativo para alinhar corretamente os elementos */
+    z-index: -1; /* Define a ordem de sobreposição para a imagem ficar atrás da navbar */
+    filter: blur(1.5px); /* Aplica um efeito de embaçamento apenas ao fundo */
+}
+
